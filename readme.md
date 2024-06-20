@@ -1,4 +1,4 @@
-# Repeat Countdown App (Flutter)
+# Repeat Countdown Timer (Flutter)
 
 A repeating countdown timer created in Flutter
 
