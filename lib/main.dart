@@ -87,13 +87,13 @@ class _CountdownAppState extends State<CountdownApp> {
   @override
   void initState() {
     eventDate = DateTime(DateTime.now().year, targetMonth, targetDay);
+    timeDiff = getEventDiff();
     Timer periodicTimer = Timer.periodic(
       const Duration(seconds: 1),
       (timer) {
         calcTimeDiff();
       },
     );
-    timeDiff = getEventDiff();
     super.initState();
   }
 
